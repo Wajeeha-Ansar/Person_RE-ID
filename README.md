@@ -13,12 +13,12 @@ We perform video re-ID by using two streams, each stream is siamese based. RGB a
 	 - MARS: http://www.liangzheng.com.cn/Project/project_mars.html  <br />
 2: Run datapreprocessing/computeOpticalFlow.m to generate optical flows. Optical Flow data will be generated in the same dir of  your datasets. datapreprocessing/PRID2011-OF-HVP for example..   <br />
 3: Run traintest/videoReid.lua and edit the file line 70-77 to adjust the models and data paths. <br />
-4: By default fusion file is run through videoReid.lua, but if you want to apply fusion within each stream then call fusion function inside CNN-RNN model in testtrain/train.lua.
-5: Example command-line options that will allow you to run the code in standard configuration 
-th reIdTrain.lua -nEpochs 600 -dataset 1 -dropoutFrac 0.6 -sampleSeqLength 16 -	samplingEpochs 100 -seed 1 -mode 'cnn-rgb'
-- NOTE: To train other datasets, change options -dataset. Similarly to run for only optical flow or for only RGB change - mode to cnn-rgb, cnn-optical, rgb-optical.
-6: In case you encounter memory issues on your GPU, consider decreasing the cudnnWorkspaceLimit (512MB is default)
-7: After running the code weights files will store in your weights/folder. 
-8: Run th reIdEval.lua to finally fusion and testing.
-9: If you have any further questions, please don't hesitate to contact me at wansar.mscs16seecs at seecs.edu.pk
+4: By default fusion file is run through videoReid.lua, but if you want to apply fusion within each stream then call fusion function inside CNN-RNN model in testtrain/train.lua. <br />
+5: Example command-line options that will allow you to run the code in standard configuration  <br />
+th reIdTrain.lua -nEpochs 600 -dataset 1 -dropoutFrac 0.6 -sampleSeqLength 16 -	samplingEpochs 100 -seed 1 -mode 'cnn-rgb' <br />
+- NOTE: To train other datasets, change options -dataset. Similarly to run for only optical flow or for only RGB change - mode to cnn-rgb, cnn-optical, rgb-optical. <br />
+6: In case you encounter memory issues on your GPU, consider decreasing the cudnnWorkspaceLimit (512MB is default) <br />
+7: After running the code weights files will store in your weights/folder. <br />
+8: Run th reIdEval.lua to finally fusion and testing. <br />
+9: If you have any further questions, please don't hesitate to contact me at wansar.mscs16seecs at seecs.edu.pk <br />
 10: A slightly cleaned up implementation of our video re-id system is provided here. If pssible I will clean-up and improve the code in future....
