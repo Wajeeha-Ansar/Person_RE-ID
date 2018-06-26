@@ -1,9 +1,9 @@
-#### Two stream CNN-RNN network with attentive pooling for Person re-ID ####
-#### Summary: We perform video re-ID by using two streams, each stream is siamese based. RGB and optical flows are separately treat as input to learn spatial and temporal information separately. We apply attentive pooling on our base model available at:                     https://github.com/niallmcl/Recurrent-Convolutional-Video-ReID. In end we fuse the output of two streams to fully utilized features maps.  
+### Two stream CNN-RNN network with attentive pooling for Person re-ID 
+### Summary: We perform video re-ID by using two streams, each stream is siamese based. RGB and optical flows are separately treat as input to learn spatial and temporal information separately. We apply attentive pooling on our base model available at:                     https://github.com/niallmcl/Recurrent-Convolutional-Video-ReID. In end we fuse the output of two streams to fully utilized features maps.  
 Step#1 Environment setting
-i): For this code to run you must have Torch7 installed with the nn, nnx, cunn, rnn, image,        	optim and cutorch pacakges.
-ii): You must have an Nvidia GPU in order to use CUDA. See http://torch.ch/ for details.
-iii): MATLAB R2015a. 
+- i): For this code to run you must have Torch7 installed with the nn, nnx, cunn, rnn, image,        	optim and cutorch pacakges.
+- ii): You must have an Nvidia GPU in order to use CUDA. See http://torch.ch/ for details.
+- iii): MATLAB R2015a. 
 Step#2 Running the code 
 1: To run this code first download data sets avaiable at the following links:   
 •	 iLIDS-VID: http://www.eecs.qmul.ac.uk/~xiatian/downloads_qmul_iLIDS-VID_ReID_dataset.html
@@ -20,3 +20,6 @@ th reIdTrain.lua -nEpochs 600 -dataset 1 -dropoutFrac 0.6 -sampleSeqLength 16 -	
 8: Run th reIdEval.lua to finally fusion and testing.
 9: If you have any further questions, please don't hesitate to contact me at wansar.mscs16seecs at seecs.edu.pk
 10: A slightly cleaned up implementation of our video re-id system is provided here. If pssible I will clean-up and improve the code in future....
+- George Washington
+- John Adams
+- Thomas Jefferson
