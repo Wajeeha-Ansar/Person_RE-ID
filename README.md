@@ -13,7 +13,7 @@ We perform video re-ID by using two streams, each stream is siamese based. RGB a
 	 - MARS: http://www.liangzheng.com.cn/Project/project_mars.html  <br />
 2: Run datapreprocessing/computeOpticalFlow.m to generate optical flows. Optical Flow data will be generated in the same dir of  your datasets. datapreprocessing/PRID2011-OF-HVP for example..   <br />
 3: Run traintest/videoReid.lua and edit the file line 70-77 to adjust the models and data paths. <br />
-4: By default fusion file is run through videoReid.lua, but if you want to apply fusion within each stream then call fusion function inside CNN-RNN model in testtrain/train.lua. <br />
+4: By default fusion file is run through videoReid.lua, but if you want to apply fusion within each stream then call fusion function inside CNN-RNN model in testtrain/reidtrain.lua. <br />
 5: Example command-line options that will allow you to run the code in standard configuration  <br />
 th reIdTrain.lua -nEpochs 600 -dataset 1 -dropoutFrac 0.6 -sampleSeqLength 16 -	samplingEpochs 100 -seed 1 -mode 'cnn-rgb' <br />
 6: NOTE: To train other datasets, change options -dataset. Similarly to run for only optical flow or for only RGB change - mode to cnn-rgb, cnn-optical, rgb-optical.  <br />
