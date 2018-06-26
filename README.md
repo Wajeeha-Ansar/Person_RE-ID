@@ -20,5 +20,5 @@ th reIdTrain.lua -nEpochs 600 -dataset 1 -dropoutFrac 0.6 -sampleSeqLength 16 -	
 7: In case you encounter memory issues on your GPU, consider decreasing the cudnnWorkspaceLimit (512MB is default) <br />
 8: After running the code weights files will store in your weights/folder. <br />
 9: Run th reIdEval.lua to finally fusion and testing. <br />
-10: If you have any further questions, please don't hesitate to contact me at wansar.mscs16seecs at seecs.edu.pk <br />
+10: If you have any further questions, please don't hesitate to contact me at ### wansar.mscs16seecs at seecs.edu.pk <br />
 11: A slightly cleaned up implementation of our video re-id system is provided here. If pssible I will clean-up and improve the code in future....
