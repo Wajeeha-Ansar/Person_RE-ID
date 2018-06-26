@@ -1,6 +1,6 @@
 # Two stream CNN-RNN network with attentive pooling for Person re-ID 
 ## Summary:
-We perform video re-ID by using two streams, each stream is siamese based. RGB and optical flows are separately treat as input to learn spatial and temporal information separately. We apply attentive pooling on our base model available at:                     https://github.com/niallmcl/Recurrent-Convolutional-Video-ReID. In end we fuse the output of two streams to fully utilized features maps.  
+We perform video re-ID by using two streams, each stream is siamese based. RGB and optical flows are separately treat as input to learn spatial and temporal information separately. We apply attentive pooling on our base Paper: "Recurrent Convolutional Network for Video-based Person Re-Identification". In end we fuse the output of two streams to fully utilized features maps.  
 ## Step#1 Environment setting
 - i): For this code to run you must have Torch7 installed with the nn, nnx, cunn, rnn, image,        	optim and cutorch pacakges.
 - ii): You must have an Nvidia GPU in order to use CUDA. See http://torch.ch/ for details.
