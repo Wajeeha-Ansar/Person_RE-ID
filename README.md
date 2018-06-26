@@ -5,11 +5,11 @@
 - ii): You must have an Nvidia GPU in order to use CUDA. See http://torch.ch/ for details.
 - iii): MATLAB R2015a.
 
-##Step#2 Running the code 
-** 1 **: To run this code first download data sets avaiable at the following links:   
- 	 -  iLIDS-VID: http://www.eecs.qmul.ac.uk/~xiatian/downloads_qmul_iLIDS-VID_ReID_dataset.html
-	 -  PRID-2011: https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/PRID11/
-	 -  MARS: http://www.liangzheng.com.cn/Project/project_mars.html
+## Step#2 Running the code : <br />
+# 1: To run this code first download data sets avaiable at the following links: <br />  
+ 	 - iLIDS-VID: http://www.eecs.qmul.ac.uk/~xiatian/downloads_qmul_iLIDS-VID_ReID_dataset.html <br />
+	 - PRID-2011: https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/PRID11/<br />
+	 - MARS: http://www.liangzheng.com.cn/Project/project_mars.html <br />
 **2**: Run datapreprocessing/computeOpticalFlow.m to generate optical flows. Optical Flow data will be generated in the same dir of  your datasets. datapreprocessing/PRID2011-OF-HVP for example.. \n 
 **3**: Run traintest/videoReid.lua and edit the file line 70-77 to adjust the models and data paths.
 4: By default fusion file is run through videoReid.lua, but if you want to apply fusion within each stream then call fusion function inside CNN-RNN model in testtrain/train.lua.
